@@ -1,19 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />                                     
+    <meta charset="UTF-8" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap"
+      rel="stylesheet"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>meme generator</title>
+    <title>food data</title>
   </head>
-  <body>
-    
-    <div class = "container">
-      <img src="" alt ="meme" id="meme" />
-      <h3 id="title"> hahah </h3>
-      <button id="get-meme-btn">get meme.</button>
-    </div>
+  <body class="warm">
 
+    <h1> find a meal</h1>
+    <section class="ReponseList">
+      <div class="InputList">
+        <form id="form">
+          <div class="input">
+            <label for="Input" >meal:</label>
+            <input type="text" name="Input" class="UserInput" required />
+            <input type="submit" value="Submit" class="btn" />
+          </div>
+        </form>
+        <ul class="list">
+          meals available:
+        </ul>
+      </div>
 
+    <div class="api-reponse"></div>
+    </section>
     <script type="module" src="./js/main.js"></script>
   </body>
 </html>
